@@ -1,1 +1,1 @@
-![alt text](screenshoot/ekrann.jpg)
+![alt text](screenshoot/ekrann2.jpg)
