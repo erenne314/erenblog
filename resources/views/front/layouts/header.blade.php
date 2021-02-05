@@ -45,7 +45,7 @@
                     <a class="nav-link" href="post.html">Tuvallar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">İletişim</a>
+                    <a class="nav-link" href="../contact.blade.php">İletişim</a>
                 </li>
             </ul>
         </div>
