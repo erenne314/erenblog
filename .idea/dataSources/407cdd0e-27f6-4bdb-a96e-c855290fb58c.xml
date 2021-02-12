@@ -824,23 +824,41 @@ SELECT|sys.sys_config
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="249" parent="236" name="job">
+    <column id="249" parent="236" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="250" parent="236" name="created_at">
+    <column id="250" parent="236" name="password">
       <Position>4</Position>
-      <DataType>timestamp|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="251" parent="236" name="updated_at">
+    <column id="251" parent="236" name="remember_token">
       <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+    </column>
+    <column id="252" parent="236" name="created_at">
+      <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <key id="252" parent="236" name="PRIMARY">
+    <column id="253" parent="236" name="updated_at">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+    </column>
+    <index id="254" parent="236" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="255" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
+    </key>
+    <key id="256" parent="236" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

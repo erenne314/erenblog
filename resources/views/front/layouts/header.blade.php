@@ -3,6 +3,7 @@
 
 <head>
 
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -69,3 +70,20 @@
 
 <div class="container">
     <div class="row">
+
+
+
+    </div>
+</div>
+<ul id="topMenu" class="nav pull-left">
+
+    @auth
+        <li class=""><a href="{{route('logout')}}">Logout</a></li>
+    @endauth
+
+    @guest
+        <li class=""><a href="{{route('login')}}">Login</a></li>
+        <li class=""><a href="{{route('register')}}">Register</a></li>
+    @endguest
+
+</ul>
