@@ -2,19 +2,22 @@
 @section('title', 'Ana Sayfa')
 @section('content')
 
-        <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="list-group">
+        <a href="#" class="list-group-item">yazılar</a>
+    </div>
+
+    <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-preview">
                 <a href="post.html">
                     <h2 class="post-title">
-                        son model saksılar gostil sanat raflarında
+                        Man must explore, and this is exploration at its greatest
                     </h2>
                     <h3 class="post-subtitle">
-                        login sayfası ___ bağlantı tamam
-                        register sayfası _______ hata
+                        Problems look mighty small from 150 miles up
                     </h3>
                 </a>
                 <p class="post-meta">Posted by
-                    <a href="#">makinistt</a>
+                    <a href="#">Start Bootstrap</a>
                     on September 24, 2019</p>
             </div>
             <hr>
@@ -59,27 +62,8 @@
             <hr>
             <!-- Pager -->
             <div class="clearfix">
-                <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                <a class="btn btn-primary float-right" href="#">Eski Gönderiler &rarr;</a>
             </div>
-        </div>
-
-        <div class = "card">
-            <div class = "card-header">
-                Kategoriler
-
-            </div>
-            <div class="list-group">
-
-                @foreach($categories as $category)
-
-                    <li class="list-group-item">
-                        <a href="#" > {{$category->name}} </a> <span class="badge bg-danger float-right">12</span>
-                    </li>
-
-                @endforeach
-
-            </div>
-        </div>
         </div>
 
 @endsection
